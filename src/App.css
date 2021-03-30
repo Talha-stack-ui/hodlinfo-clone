@@ -1,38 +1,298 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+#display {
+  background-color: white;
+  border: none;
+  margin-left: 10px;
+}
+.header-left span {
+  color: rgb(49, 228, 228);
+}
+#logo {
+  font-size: 60px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.header-left p {
+  font-size: 20px;
+}
+.select {
+  font-size: 25px;
+  border-radius: 8px;
+  background-color: rgb(236, 236, 236);
+  border: none;
+  margin: 10px;
+  margin-top: 120px;
+  cursor: pointer;
+  outline: none;
+}
+.counter {
+  background-color: grey;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 50px;
+  right: 80px;
+  border-radius: 80px;
+  border: 1px solid rgb(49, 228, 228);
+}
+#telegram {
+  background-color: rgb(142, 243, 243);
+  border: none;
+  font-size: 15px;
+  border-radius: 8px;
+  position: relative;
+  right: 25px;
+  top: 15px;
+  width: 150px;
+  height: 35px;
+  cursor: pointer;
+  font-weight: 100;
+}
+.telegram {
+  background-color: rgb(142, 243, 243);
+}
+#display {
+  position: relative;
+  top: 15px;
+}
+#main-text {
+  text-align: center;
+  font-size: 30px;
+  color: lightgrey;
+  font-weight: 100;
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px;
+}
+.left-main {
+  display: flex;
+  font-size: 20px;
+}
+.left-main p {
+  margin-left: 60px;
+  position: relative;
+}
+.left-main span {
+  font-size: 40px;
+  color: aqua;
+}
+.main-center {
+  font-size: 70px;
+  position: relative;
+  right: -40px;
+  top: -10px;
+}
+.main-right {
+  display: flex;
+  font-size: 20px;
+}
+.main-right p {
+  margin-left: 60px;
+  position: relative;
+  left: -10px;
+}
+.main-right span {
+  font-size: 40px;
+  color: aqua;
+}
+#center-text {
+  text-align: center;
+  position: relative;
+  top: -50px;
+  left: 30px;
+  color: lightgrey;
+  font-weight: 100;
+}
+.img {
+  position: relative;
+  left: 40px;
+  cursor: pointer;
+}
+.links {
+  text-decoration: none;
+  color: black;
+}
+.list-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin: 30px;
+  color: gray;
+  font-weight: 300;
+}
+.data {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 30px;
+  background-color: lightgray;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  height: 40px;
+}
+.img2 {
+  margin: 30px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+}
+.left p {
+  margin-left: 15px;
+  font-size: 11px;
+  font-weight: 500;
+  color: grey;
+}
+#quad {
+  text-decoration: none;
+  color: rgb(49, 228, 228);
+}
+.right p {
+  margin-left: 15px;
+  font-size: 11px;
+  font-weight: 500;
+  color: grey;
+  margin-right: 30px;
+}
+#mail {
+  text-decoration: none;
+  color: grey;
+}
+.bottom {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(61, 61, 61);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*RESPONSIVE*/
+@media screen and (max-width: 1024px) {
+  .App-header {
+    position: relative;
+    left: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  .App-header p {
+    position: relative;
+    left: 40px;
+  }
+  .header-center {
+    display: flex;
+    position: relative;
+    right: 300px;
+  }
+  .select {
+    height: 25px;
+    font-size: 15px;
+    width: max-content;
+    position: relative;
+    left: 30px;
+    top: 10px;
+  }
+  #telegram {
+    position: relative;
+    right: 460px;
+    top: 150px;
+    height: 30px;
+  }
+  .telegram {
+    background-color: rgb(142, 243, 243);
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  #main-text {
+    position: relative;
+    font-size: 15px;
+    top: 70px;
+    left: 10px;
+  }
+  .counter {
+    position: relative;
+    right: 520px;
+    top: 180px;
+  }
+  #display {
+    position: relative;
+    right: 290px;
+    top: 118px;
+  }
+  .numbers {
+    position: relative;
+    right: 25px;
+  }
+  .resp p {
+    font-size: 10px;
+    width: 50px;
+    margin: 20px;
+  }
+  .resp span {
+    font-size: 15px;
+  }
+  .main-center {
+    font-size: 20px;
+    position: relative;
+    right: 8px;
+    top: 10px;
+    margin: 2px;
+  }
+  .main-right p {
+    width: 60px;
+  }
+  #center-text {
+    font-size: 10px;
+    position: relative;
+    left: 15px;
+    top: -80px;
+  }
+  .image {
+    width: 440px;
+    height: 65px;
+    top: -60px;
+    position: relative;
+    right: 15px;
+  }
+  .list-info p {
+    font-size: 15px;
+    position: relative;
+    left: -5px;
+    top: -60px;
+  }
+  .data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+    background-color: lightgray;
+    border-radius: 8px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    height: 40px;
+    justify-content: space-around;
+    position: relative;
+    top: -60px;
+    right: 4px;
+  }
+  .img2 {
+    width: 440px;
+    height: 70px;
+    top: -20px;
+    position: relative;
+    right: 15px;
   }
 }
